@@ -28,7 +28,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint src/**/*.ts",
-    "test": "node --test --import tsx/esm tests/**/*.test.ts"
+    "test": "node --test --import tsx/esm tests/*.test.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
