@@ -1,7 +1,6 @@
 import { CountdownOptions, CountdownTheme, I18nDictionary, TimeUnit } from './types.js';
 import { ellipsesTheme } from './themes/ellipsesTheme.js';
 import { i18nEN } from './i18n/en.js';
-import styles from './MorphCountdown.css?inline';
 
 export class MorphCountdown {
   private container: HTMLElement;
@@ -43,18 +42,7 @@ export class MorphCountdown {
 
   private init(): void {
     this.renderMarkup();
-    this.injectStyles();
     this.start();
-  }
-
-  private injectStyles(): void {
-  const styleId = 'morph-countdown-global-styles';
-    if (!document.getElementById(styleId)) {
-      const styleEl = document.createElement('style');
-      styleEl.id = styleId;
-      styleEl.textContent = styles;
-      document.head.appendChild(styleEl);
-    }
   }
 
   private renderMarkup(): void {
