@@ -1,6 +1,6 @@
 {
   "name": "@htochko/morph-countdown",
-  "version": "1.0.0-beta.6",
+  "version": "1.0.0-beta.7",
   "description": "Modular SVG matrix-morphing countdown component with tree-shaking support and custom vector themes",
   "type": "module",
   "license": "SEE LICENSE IN LICENSE",
@@ -9,6 +9,10 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/morph-countdown.js",
       "style": "./dist/morph-countdown.css"
+    },
+    "./morph-countdown.css": {
+      "style": "./dist/morph-countdown.css",
+      "import": "./dist/morph-countdown.css"
     },
     "./themes/*": {
       "types": "./dist/themes/*.d.ts",
