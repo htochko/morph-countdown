@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'node:path';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
   build: {
@@ -7,7 +8,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'MorphCountdown',
       fileName: 'morph-countdown',
-      formats: ['es', 'umd'],
+      formats: ['es'],
     },
     rollupOptions: {
       external: [],
@@ -17,4 +18,10 @@ export default defineConfig({
     },
     sourcemap: true,
   },
+  plugins: [
+    dts({ 
+      insertTypesEntry: true,
+      exclude: ['**/*.test.ts', 'tests/**/*']
+    }),
+  ],
 });

@@ -1,13 +1,14 @@
 {
   "name": "@htochko/morph-countdown",
-  "version": "1.0.0-beta.5",
+  "version": "1.0.0-beta.6",
   "description": "Modular SVG matrix-morphing countdown component with tree-shaking support and custom vector themes",
   "type": "module",
   "license": "SEE LICENSE IN LICENSE",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/morph-countdown.js",
+      "style": "./dist/morph-countdown.css"
     },
     "./themes/*": {
       "types": "./dist/themes/*.d.ts",
@@ -18,7 +19,8 @@
       "import": "./dist/i18n/*.js"
     }
   },
-  "main": "./dist/index.js",
+  "main": "./dist/morph-countdown.js",
+  "style": "./dist/morph-countdown.css",
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
@@ -26,7 +28,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "vite build",
     "lint": "eslint src/**/*.ts",
     "test": "node --test --import tsx/esm tests/*.test.ts"
   },
@@ -39,8 +41,7 @@
     "tsx": "^4.23.15",
     "typescript": "^5.0.0",
     "typescript-eslint": "^8.72.1",
-    "vite": "^8.3.5",
-    "vite-plugin-dts": "^5.1.2"
+    "vite": "^8.3.5"
   },
   "keywords": [
     "countdown",
@@ -49,9 +50,5 @@
     "matrix-morphing",
     "typescript",
     "tree-shaking"
-  ],
-  "allowScripts": {
-    "esbuild@0.28.2": true,
-    "fsevents@2.3.3": true
-  }
+  ]
 }

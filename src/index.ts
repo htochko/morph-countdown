@@ -1,3 +1,4 @@
+import './MorphCountdown.css';
 export { MorphCountdown } from './MorphCountdown.js';
 export { ellipsesTheme } from './themes/ellipsesTheme.js';
 export { i18nEN } from './i18n/en.js';
