@@ -154,6 +154,13 @@ body {
   color: var(--text-muted);
   margin-top: 0.25rem;
 }
+
+#countdown-target {
+  width: calc(100vw - 32px);
+  max-width: 600px; 
+  margin: 0 auto;
+  box-sizing: border-box;
+}
 .slot-digits-wrapper {
   background-color: var(--text-color);
 }
