@@ -1,7 +1,8 @@
-import { MorphCountdown } from '../dist/morph-countdown.js'; // или из node_modules если тестируешь локально
+import './style.css';
+import { MorphCountdown } from '../src/index.ts';
 
 // timer
-const targetDate = new Date(Date.now() + 48 * 60 * 60 * 1000); // 48 часов вперед
+const targetDate = new Date(Date.now() + 48 * 60 * 60 * 1000); // +48 hours
 const countdown = new MorphCountdown({
   target: targetDate,
   //theme: 'leaf',

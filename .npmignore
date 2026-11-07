@@ -3,6 +3,8 @@ demo/
 docs/
 tests/
 vite.config.ts
+vite.demo.config.ts
+donors.json
 tsconfig.json
 .eslintrc
 .git/

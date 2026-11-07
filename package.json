@@ -34,7 +34,8 @@
   "scripts": {
     "build": "vite build",
     "lint": "eslint src/**/*.ts",
-    "test": "node --test --import tsx/esm tests/*.test.ts"
+    "test": "node --test --import tsx/esm tests/*.test.ts",
+    "build:demo": "vite build --config vite.demo.config.ts",
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
