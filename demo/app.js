@@ -23,7 +23,7 @@ globalThis.querySelectorAll('.theme-btn').forEach(btn => {
 });
 */
 async function loadDonors() {
-  const grid = globalThis.getElementById('donors-grid');
+  const grid = globalThis.querySelector('#donors-grid');
   try {
     const response = await fetch('../donors.json');
     const donors = await response.json();
