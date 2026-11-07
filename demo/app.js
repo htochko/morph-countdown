@@ -1,4 +1,4 @@
-import './style.css';
+import './styles.css';
 import { MorphCountdown } from '../src/index.ts';
 
 // timer
