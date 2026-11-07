@@ -154,8 +154,12 @@ body {
   color: var(--text-muted);
   margin-top: 0.25rem;
 }
+.slot-digits-wrapper {
+  background-color: var(--text-color);
+}
 
 .svg-digit-window {
+  background-color: var(--accent-color);
   overflow: hidden;
   margin: 0.4em;
 }
