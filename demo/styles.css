@@ -154,6 +154,10 @@ body {
   color: var(--text-muted);
   margin-top: 0.25rem;
 }
+.morph-countdown-grid {
+  background-color: var(--text-color);
+}
 .svg-digit-window {
   overflow: hidden;
+  margin: 1em;
 }
