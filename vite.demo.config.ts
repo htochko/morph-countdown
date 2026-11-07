@@ -5,7 +5,7 @@ export default defineConfig({
   base: '/morph-countdown/',
   root: resolve(import.meta.dirname, 'demo'),
   build: {
-    outDir: 'docs',
+    outDir: resolve(import.meta.dirname, 'docs'),
     emptyOutDir: true,
     rollupOptions: {
       input: resolve(import.meta.dirname, 'demo/index.html'),
