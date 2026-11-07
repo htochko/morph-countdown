@@ -3,7 +3,7 @@ import { MorphCountdown } from '../src/index.ts';
 
 // timer
 const targetDate = new Date(Date.now() + 48 * 60 * 60 * 1000); // +48 hours
-/* const countdown = */ new MorphCountdown('#countdown-root', {
+/* const countdown = */ new MorphCountdown('#countdown-target', {
   targetDate: targetDate,
   //theme: 'leaf',
   showBranding: true
