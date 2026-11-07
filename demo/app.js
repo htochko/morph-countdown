@@ -3,12 +3,12 @@ import { MorphCountdown } from '../src/index.ts';
 
 // timer
 const targetDate = new Date(Date.now() + 48 * 60 * 60 * 1000); // +48 hours
-const countdown = new MorphCountdown({
+/* const countdown = */ new MorphCountdown('#countdown-root', {
   target: targetDate,
   //theme: 'leaf',
   showBranding: true
 });
-
+/** 
 globalThis.getElementById('countdown-target').appendChild(countdown.element);
 
 // Swith theme
@@ -21,7 +21,7 @@ globalThis.querySelectorAll('.theme-btn').forEach(btn => {
     countdown.setTheme(theme);
   });
 });
-
+*/
 async function loadDonors() {
   const grid = globalThis.getElementById('donors-grid');
   try {
