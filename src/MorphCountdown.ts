@@ -88,8 +88,8 @@ export class MorphCountdown {
       ? ''
       : `
         <div class="morph-countdown-attribution" style="font-size:0.75rem; opacity:0.6; margin-top:0.5rem; text-align:center;">
-          powered by <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:underline;">morphCountdown</a>
-          (<a href="https://paypal.me/YOUR_PAYPAL_HANDLE" target="_blank" rel="noopener noreferrer" style="color:inherit; opacity:0.8;">Remove link</a>)
+          powered by <a href="https://github.com/htochko/morph-countdown" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:underline;">morphCountdown</a>
+          (<a href="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_donations&business=sb-2niys53759704@business.example.com&item_name=MorphCountdown%20Support%20%26%20License&currency_code=EUR&amount=10.00" target="_blank" rel="noopener noreferrer" style="color:inherit; opacity:0.8;">Remove link</a>)
         </div>
       `;
 
